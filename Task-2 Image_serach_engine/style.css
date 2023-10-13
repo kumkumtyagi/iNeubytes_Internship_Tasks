@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #0f0d0d;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    margin: 40px 0 60px 0;
+    color: white;
+}
+
+form {
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-input {
+    width: 60%;
+    max-width: 400px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #333;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+#search-button {
+    margin-left: 10px;
+    color: #fff;
+    background-color: #0d0566;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+#search-button:hover {
+    padding: 9px;
+    border: 1px solid #138065;
+    background-color: transparent;
+    color: #138065;
+}
+
+.search-results {
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-result {
+    margin-bottom: 60px;
+    width: 30%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    box-sizing: border-box !important;
+}
+
+.search-result img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: opacity 0.2 ease-in-out;
+}
+
+.search-result:hover img {
+    opacity: 0.8;
+}
+
+.search-result a {
+    color: white;
+    padding: 10px;
+    text-transform: capitalize;
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#show-more-button {
+    background-color: #008cba;
+    margin: 30px auto;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    display: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .search-result {
+        width: 100% !important;
+        margin: 10px 10px 50px 10px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .search-results {
+        padding: 20px;
+    }
+
+    .search-result {
+        width: 45% !important;
+    }
+}
